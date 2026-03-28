@@ -160,6 +160,20 @@ Rules:
 - **Express conditionals as English.** Instead of nested `if/elif/else` in bash,
   write numbered decision steps: "1. If X, do Y. 2. Otherwise, do Z."
 
+## gstack
+
+Use the `/browse` skill from gstack for all web browsing. NEVER use
+`mcp__claude-in-chrome__*` tools — they are slow, unreliable, and not what this
+project uses.
+
+Available skills: /office-hours, /plan-ceo-review, /plan-eng-review,
+/plan-design-review, /design-consultation, /review, /ship, /land-and-deploy,
+/canary, /benchmark, /browse, /qa, /qa-only, /design-review,
+/setup-browser-cookies, /setup-deploy, /retro, /investigate, /document-release,
+/codex, /cso, /autoplan, /careful, /freeze, /guard, /unfreeze, /gstack-upgrade
+
+If gstack skills aren't working, run: `cd .claude/skills/gstack && ./setup`
+
 ## Browser interaction
 
 When you need to interact with a browser (QA, dogfooding, cookie setup), use the
